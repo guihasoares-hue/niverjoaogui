@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aniversário do João Gui — Turminha dos Dinossauros</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ CABEÇALHO ============ -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="#topo" class="brand">
+      <img src="assets/egg-icon.svg" alt="" class="brand-egg">
+      <span>João Gui <em>1 aninho</em></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="topo" class="hero">
+  <img src="assets/bg-hero.svg" alt="" class="hero-bg" aria-hidden="true">
+  <div class="hero-content">
+    <p class="eyebrow">Estão todos convidados para a</p>
+    <h1>Rex-festa do <span>João Gui!</span></h1>
+    <p class="hero-sub">Um dinossauro bem pequenininho está fazendo 1 aninho — e a expedição só começa com você por perto.</p>
+
+    <div class="hero-facts">
+      <div class="fact-egg">
+        <img src="assets/egg-icon.svg" alt="">
+        <div>
+          <strong>Quando</strong>
+          <span>Sábado, 03 de Outubro de 2026 · às 13h00</span>
+        </div>
+      </div>
+      <div class="fact-egg">
+        <img src="assets/egg-icon.svg" alt="">
+        <div>
+          <strong>Onde</strong>
+          <span>Nome do espaço · Bairro, Cidade</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#rsvp" class="btn-primary" data-tab-target="rsvp">Confirmar presença</a>
+  </div>
+  <img src="assets/dino-mascot.svg" alt="Dinossauro bebê fofo" class="hero-dino">
+</section>
+
+<!-- ============ NAVEGAÇÃO EM ABAS ============ -->
+<nav class="tabs" id="tabs" aria-label="Seções do site">
+  <button class="tab-btn is-active" data-tab="rsvp">🥚 Confirmar presença</button>
+  <button class="tab-btn" data-tab="galeria">📸 Galeria</button>
+  <button class="tab-btn" data-tab="presentes">🎁 Dicas de presente</button>
+  <button class="tab-btn" data-tab="local">🌿 Localização</button>
+</nav>
+
+<main class="content">
+
+  <!-- ===== ABA: CONFIRMAR PRESENÇA ===== -->
+  <section id="rsvp" class="tab-panel is-active">
+    <div class="panel-inner rsvp-layout">
+      <div class="rsvp-intro">
+        <h2>Confirme sua presença</h2>
+        <p>Contamos com você nessa aventura pré-histórica! Preencha o formulário abaixo até <strong>00/00/2026</strong> para garantirmos direitinho a comida e as lembrancinhas de cada convidado.</p>
+        <img src="assets/dino-mascot.svg" alt="" class="rsvp-dino">
+      </div>
+
+      <form class="rsvp-form" id="rsvpForm" action="https://formspree.io/f/SEU_CODIGO_AQUI" method="POST">
+        <label>
+          Nome completo
+          <input type="text" name="nome" placeholder="Seu nome" required>
+        </label>
+
+        <label>
+          Vai comparecer?
+          <select name="presenca" required>
+            <option value="">Selecione</option>
+            <option value="Sim, vou!">Sim, vou! 🦕</option>
+            <option value="Não poderei ir">Não poderei ir 😢</option>
+          </select>
+        </label>
+
+        <div class="form-row">
+          <label>
+            Adultos
+            <input type="number" name="adultos" min="0" value="1">
+          </label>
+          <label>
+            Crianças
+            <input type="number" name="criancas" min="0" value="0">
+          </label>
+        </div>
+
+        <label>
+          Alguma restrição alimentar?
+          <input type="text" name="restricao" placeholder="Ex: alergia a amendoim (opcional)">
+        </label>
+
+        <label>
+          Recado para o aniversariante
+          <textarea name="mensagem" rows="3" placeholder="Deixe um recadinho fofo (opcional)"></textarea>
+        </label>
+
+        <button type="submit" class="btn-primary btn-block">Enviar confirmação</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== ABA: GALERIA ===== -->
+  <section id="galeria" class="tab-panel">
+    <div class="panel-inner">
+      <h2>Galeria de fotos</h2>
+      <p class="panel-sub">Alguns registros da nossa expedição até aqui — troque pelas fotos do João Gui!</p>
+
+      <div class="gallery-grid">
+        <figure><img src="https://placehold.co/500x500/B7DEC4/2F4A38?text=Foto+1" alt="Foto do Joao Gui 1"></figure>
+        <figure><img src="https://placehold.co/500x700/F5E9D6/2F4A38?text=Foto+2" alt="Foto do Joao Gui 2"></figure>
+        <figure><img src="https://placehold.co/500x500/F1876B/FFFFFF?text=Foto+3" alt="Foto do Joao Gui 3"></figure>
+        <figure><img src="https://placehold.co/500x700/8FAE7D/FFFFFF?text=Foto+4" alt="Foto do Joao Gui 4"></figure>
+        <figure><img src="https://placehold.co/500x500/F6C94C/2F4A38?text=Foto+5" alt="Foto do Joao Gui 5"></figure>
+        <figure><img src="https://placehold.co/500x700/B7DEC4/2F4A38?text=Foto+6" alt="Foto do Joao Gui 6"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABA: DICAS DE PRESENTE ===== -->
+  <section id="presentes" class="tab-panel">
+    <div class="panel-inner">
+      <h2>Dicas de presente</h2>
+      <p class="panel-sub">A presença de vocês já é o maior presente! Mas se quiserem mimar o Théo, aqui vão algumas ideias:</p>
+
+      <div class="gift-grid">
+        <div class="gift-card">
+          <span class="gift-emoji">👕</span>
+          <h3>Roupinhas</h3>
+          <p>Tamanho 2 anos, de preferência confortáveis para engatinhar e explorar o mundo.</p>
+        </div>
+        <div class="gift-card">
+          <span class="gift-emoji">📚</span>
+          <h3>Livros infantis</h3>
+          <p>Livrinhos de pano, banho ou capa dura com bichinhos e dinossauros.</p>
+        </div>
+        <div class="gift-card">
+          <span class="gift-emoji">🧸</span>
+          <h3>Brinquedos educativos</h3>
+          <p>Blocos de montar, encaixes e brinquedos que estimulem a coordenação.</p>
+        </div>
+        <div class="gift-card">
+          <span class="gift-emoji">🍼</span>
+          <h3>Itens de bebê</h3>
+          <p>Fraldas (tamanho G), lencinhos umedecidos e produtos de higiene sempre são bem-vindos.</p>
+        </div>
+        <div class="gift-card">
+          <span class="gift-emoji">💌</span>
+          <h3>Contribuição especial</h3>
+          <p>Se preferir, pode contribuir via PIX para o caderninho de poupança do Théo.<br><strong>Chave PIX:</strong> exemplo@email.com</p>
+        </div>
+        <div class="gift-card">
+          <span class="gift-emoji">🚫</span>
+          <h3>Sem obrigação!</h3>
+          <p>O importante é celebrar juntos. Nenhum presente é esperado ou obrigatório.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABA: LOCALIZAÇÃO ===== -->
+  <section id="local" class="tab-panel">
+    <div class="panel-inner">
+      <h2>Como chegar</h2>
+      <p class="panel-sub"><strong>Nome do espaço</strong> · Rua Exemplo, 123 — Bairro, Cidade/UF</p>
+
+      <div class="map-wrap">
+        <iframe
+          title="Mapa do local do evento"
+          src="https://www.google.com/maps?q=Avenida+Paulista,+S%C3%A3o+Paulo&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <a class="btn-primary" href="https://www.google.com/maps/search/?api=1&query=Avenida+Paulista+S%C3%A3o+Paulo" target="_blank" rel="noopener">Abrir no Google Maps</a>
+
+      <div class="tips-box">
+        <h3>Dicas para chegar</h3>
+        <ul>
+          <li>🚗 Estacionamento disponível no local.</li>
+          <li>🚇 Estação de metrô mais próxima: nome da estação.</li>
+          <li>🅿️ Vagas para convidados com prioridade próximas à entrada.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <img src="assets/footprints.svg" alt="" class="footer-tracks">
+  <p>Com muito carinho, esperamos vocês nessa festa pré-histórica! 🦕💚</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
