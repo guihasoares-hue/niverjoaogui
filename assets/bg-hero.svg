@@ -1,0 +1,27 @@
+<svg viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FBF3E7"/>
+      <stop offset="100%" stop-color="#F5E9D6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+
+  <!-- sol fofo -->
+  <circle cx="1350" cy="180" r="90" fill="#F6C94C" opacity="0.85"/>
+  <circle cx="1320" cy="160" r="8" fill="#2F4A38" opacity="0.5"/>
+  <circle cx="1360" cy="158" r="8" fill="#2F4A38" opacity="0.5"/>
+  <path d="M1310,195 Q1345,215 1380,195" stroke="#2F4A38" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- colinas ao fundo -->
+  <path d="M0,620 C250,560 450,560 700,610 C950,660 1150,600 1600,640 L1600,900 L0,900 Z" fill="#CBE3B4" opacity="0.7"/>
+  <path d="M0,700 C300,650 600,680 900,720 C1150,750 1400,700 1600,730 L1600,900 L0,900 Z" fill="#8FAE7D" opacity="0.55"/>
+  <path d="M0,780 C350,740 750,760 1050,800 C1300,830 1450,790 1600,810 L1600,900 L0,900 Z" fill="#4F7058" opacity="0.5"/>
+
+  <!-- folhagens -->
+  <g fill="#8FAE7D" opacity="0.8">
+    <path d="M60,760 C110,680 200,690 210,760 C160,740 100,750 60,760 Z"/>
+    <path d="M1480,780 C1530,700 1610,715 1610,780 C1560,760 1510,770 1480,780 Z"/>
+    <path d="M700,820 C740,760 810,770 815,820 C775,805 730,810 700,820 Z"/>
+  </g>
+</svg>
