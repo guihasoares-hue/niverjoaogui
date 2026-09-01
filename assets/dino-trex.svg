@@ -1,0 +1,46 @@
+<svg viewBox="0 0 340 340" xmlns="http://www.w3.org/2000/svg">
+  <!-- sombra -->
+  <ellipse cx="175" cy="308" rx="115" ry="14" fill="#223247" opacity="0.1"/>
+
+  <!-- cauda -->
+  <path d="M255,225 C305,235 325,205 315,175 C305,200 280,208 245,205 Z" fill="#BEE7F5"/>
+
+  <!-- pernas -->
+  <rect x="120" y="235" width="34" height="58" rx="16" fill="#BEE7F5"/>
+  <rect x="195" y="235" width="34" height="58" rx="16" fill="#BEE7F5"/>
+  <ellipse cx="137" cy="296" rx="19" ry="10" fill="#F4FBFF"/>
+  <ellipse cx="212" cy="296" rx="19" ry="10" fill="#F4FBFF"/>
+
+  <!-- corpo -->
+  <ellipse cx="180" cy="215" rx="105" ry="70" fill="#BEE7F5"/>
+  <ellipse cx="165" cy="240" rx="65" ry="38" fill="#8DC63F" opacity="0.9"/>
+
+  <!-- braços curtos -->
+  <path d="M110,190 C90,195 80,215 90,230 C96,215 108,205 122,200 Z" fill="#BEE7F5"/>
+  <path d="M225,185 C248,188 260,208 252,224 C244,210 232,200 218,196 Z" fill="#BEE7F5"/>
+
+  <!-- espinhos nas costas -->
+  <polygon points="160,110 172,80 182,112" fill="#8DC63F"/>
+  <polygon points="185,100 197,72 207,102" fill="#8DC63F"/>
+  <polygon points="208,105 219,80 228,108" fill="#8DC63F"/>
+  <polygon points="228,115 238,94 246,118" fill="#8DC63F"/>
+
+  <!-- cabeça -->
+  <circle cx="120" cy="120" r="65" fill="#BEE7F5"/>
+
+  <!-- focinho -->
+  <ellipse cx="80" cy="140" rx="34" ry="24" fill="#E3F4FA"/>
+  <circle cx="65" cy="130" r="3.5" fill="#223247"/>
+  <circle cx="82" cy="126" r="3.5" fill="#223247"/>
+
+  <!-- bochecha -->
+  <ellipse cx="84" cy="128" rx="13" ry="9" fill="#FF9142" opacity="0.55"/>
+
+  <!-- olho -->
+  <circle cx="110" cy="92" r="19" fill="#FFFFFF"/>
+  <circle cx="105" cy="97" r="10" fill="#223247"/>
+  <circle cx="100" cy="91" r="4" fill="#FFFFFF"/>
+
+  <!-- sorriso -->
+  <path d="M62,150 Q90,168 118,148" stroke="#223247" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,53 @@
+<svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg">
+  <!-- sombra -->
+  <ellipse cx="200" cy="290" rx="130" ry="14" fill="#223247" opacity="0.1"/>
+
+  <!-- cauda -->
+  <path d="M295,220 C340,225 355,205 350,180 C340,200 320,205 288,202 Z" fill="#FF9142"/>
+
+  <!-- pernas traseiras -->
+  <rect x="245" y="220" width="30" height="54" rx="14" fill="#FF9142"/>
+  <rect x="288" y="220" width="30" height="54" rx="14" fill="#FF9142"/>
+  <ellipse cx="260" cy="276" rx="17" ry="9" fill="#FFE3C7"/>
+  <ellipse cx="303" cy="276" rx="17" ry="9" fill="#FFE3C7"/>
+
+  <!-- corpo -->
+  <ellipse cx="225" cy="205" rx="110" ry="60" fill="#FF9142"/>
+  <ellipse cx="210" cy="230" rx="72" ry="32" fill="#FFC896"/>
+
+  <!-- pernas dianteiras -->
+  <rect x="140" y="220" width="28" height="54" rx="14" fill="#FF9142"/>
+  <rect x="178" y="222" width="28" height="52" rx="14" fill="#FF9142"/>
+  <ellipse cx="154" cy="276" rx="16" ry="9" fill="#FFE3C7"/>
+  <ellipse cx="192" cy="276" rx="16" ry="9" fill="#FFE3C7"/>
+
+  <!-- babado (frill) -->
+  <path d="M155,105 C130,60 165,20 210,25 C255,20 290,55 268,100 C240,75 185,75 155,105 Z" fill="#E8752C"/>
+  <circle cx="170" cy="55" r="7" fill="#8DC63F" opacity="0.85"/>
+  <circle cx="205" cy="42" r="7" fill="#8DC63F" opacity="0.85"/>
+  <circle cx="240" cy="55" r="7" fill="#8DC63F" opacity="0.85"/>
+
+  <!-- cabeça -->
+  <circle cx="128" cy="115" r="60" fill="#FF9142"/>
+
+  <!-- bico -->
+  <path d="M76,135 C58,132 50,110 62,95 C75,102 85,115 92,132 Z" fill="#FFE3C7"/>
+
+  <!-- chifres de sobrancelha -->
+  <path d="M105,72 C100,55 108,42 120,42 C118,56 116,66 112,78 Z" fill="#FFE3C7"/>
+  <path d="M148,72 C154,55 148,42 136,42 C137,56 138,66 141,78 Z" fill="#FFE3C7"/>
+
+  <!-- chifre do nariz -->
+  <path d="M92,108 C86,98 90,88 98,88 C97,96 96,102 96,110 Z" fill="#FFE3C7"/>
+
+  <!-- bochecha -->
+  <ellipse cx="108" cy="128" rx="13" ry="9" fill="#8DC63F" opacity="0.5"/>
+
+  <!-- olho -->
+  <circle cx="132" cy="98" r="18" fill="#FFFFFF"/>
+  <circle cx="127" cy="102" r="9.5" fill="#223247"/>
+  <circle cx="123" cy="97" r="3.5" fill="#FFFFFF"/>
+
+  <!-- sorriso -->
+  <path d="M78,128 Q98,142 118,126" stroke="#223247" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+</svg>

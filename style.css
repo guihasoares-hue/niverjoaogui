@@ -2,14 +2,14 @@
    TOKENS
 =================================================== */
 :root {
-  --cream: #FBF3E7;
-  --cream-2: #F5E9D6;
-  --forest: #2F4A38;
-  --forest-light: #4F7058;
-  --sage: #8FAE7D;
-  --mint: #B7DEC4;
-  --coral: #F1876B;
-  --sun: #F6C94C;
+  --cream: #F4FBFF;
+  --cream-2: #E3F4FA;
+  --forest: #223247;
+  --forest-light: #56718A;
+  --sage: #8DC63F;
+  --mint: #BEE7F5;
+  --coral: #FF9142;
+  --sun: #D4E157;
   --white: #FFFFFF;
 
   --font-display: "Baloo 2", cursive, sans-serif;
@@ -17,7 +17,7 @@
 
   --radius-lg: 28px;
   --radius-md: 18px;
-  --shadow-soft: 0 14px 30px rgba(47, 74, 56, 0.12);
+  --shadow-soft: 0 14px 30px rgba(34, 50, 71, 0.12);
 }
 
 * { box-sizing: border-box; }
@@ -56,9 +56,10 @@ select:focus-visible, textarea:focus-visible {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(251, 243, 231, 0.9);
+  background: var(--coral);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid rgba(143, 174, 125, 0.35);
+  border-bottom: 1px solid rgba(141, 198, 63, 0.35);
 }
 
 .topbar-inner {
@@ -78,10 +79,10 @@ select:focus-visible, textarea:focus-visible {
   font-family: var(--font-display);
   font-size: 1.2rem;
   font-weight: 700;
-  color: var(--forest);
+  color: var(--white);
 }
 .brand-egg { width: 26px; height: auto; }
-.brand em { font-style: normal; color: var(--forest-light); font-size: 0.9rem; font-weight: 600; margin-left: 4px; }
+.brand em { font-style: normal; color: var(--white); font-size: 0.9rem; font-weight: 600; margin-left: 4px; }
 
 .menu-toggle {
   display: none;
@@ -96,7 +97,7 @@ select:focus-visible, textarea:focus-visible {
   width: 24px;
   height: 3px;
   border-radius: 3px;
-  background: var(--forest);
+  background: var(--white);
 }
 
 /* ===================================================
@@ -161,7 +162,7 @@ select:focus-visible, textarea:focus-visible {
   align-items: center;
   gap: 10px;
   background: var(--white);
-  border: 1px solid rgba(143,174,125,.4);
+  border: 1px solid rgba(141,198,63,.4);
   border-radius: var(--radius-md);
   padding: 12px 18px;
   box-shadow: var(--shadow-soft);
@@ -171,13 +172,23 @@ select:focus-visible, textarea:focus-visible {
 .fact-egg strong { display: block; font-family: var(--font-display); font-size: .95rem; }
 .fact-egg span { font-size: .85rem; color: var(--forest-light); }
 
-.hero-dino {
+.hero-dinos {
   position: relative;
   z-index: 2;
-  width: min(260px, 60vw);
-  margin: 0 auto;
-  filter: drop-shadow(0 12px 18px rgba(47,74,56,.18));
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
 }
+
+.hero-dino {
+  width: min(300px, 46vw);
+  filter: drop-shadow(0 12px 18px rgba(34,50,71,.18));
+}
+
+.hero-dino--sauropod { margin-right: -18px; }
+.hero-dino--trex { margin-left: -18px; }
 
 /* ===================================================
    BOTÕES
@@ -194,12 +205,12 @@ select:focus-visible, textarea:focus-visible {
   border: none;
   border-radius: 999px;
   cursor: pointer;
-  box-shadow: 0 10px 20px rgba(241, 135, 107, 0.35);
+  box-shadow: 0 10px 20px rgba(255, 145, 66, 0.35);
   transition: transform .15s ease, box-shadow .15s ease;
 }
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 24px rgba(241, 135, 107, 0.42);
+  box-shadow: 0 14px 24px rgba(255, 145, 66, 0.42);
 }
 .btn-block { width: 100%; text-align: center; }
 
@@ -313,7 +324,7 @@ select:focus-visible, textarea:focus-visible {
   font-size: .95rem;
   padding: 11px 14px;
   border-radius: 12px;
-  border: 1.5px solid rgba(143,174,125,.5);
+  border: 1.5px solid rgba(141,198,63,.5);
   background: var(--white);
   color: var(--forest);
 }
@@ -361,7 +372,7 @@ select:focus-visible, textarea:focus-visible {
   background: var(--cream);
   border-radius: var(--radius-md);
   padding: 22px;
-  border: 1px solid rgba(143,174,125,.35);
+  border: 1px solid rgba(141,198,63,.35);
 }
 .gift-emoji { font-size: 1.8rem; }
 .gift-card h3 { font-size: 1.05rem; margin: 10px 0 6px; }

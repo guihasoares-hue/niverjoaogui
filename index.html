@@ -28,7 +28,7 @@
   <img src="assets/bg-hero.svg" alt="" class="hero-bg" aria-hidden="true">
   <div class="hero-content">
     <p class="eyebrow">Estão todos convidados para a</p>
-    <h1>Rex-festa do <span>João Gui!</span></h1>
+    <h1>Rex-festa do <span>João Gui</span></h1>
     <p class="hero-sub">Um dinossauro bem pequenininho está fazendo 1 aninho — e a expedição só começa com você por perto.</p>
 
     <div class="hero-facts">
@@ -43,14 +43,17 @@
         <img src="assets/egg-icon.svg" alt="">
         <div>
           <strong>Onde</strong>
-          <span>Nome do espaço · Bairro, Cidade</span>
+          <span>Chácara Seleancla · Rua dos Economiários, 855 Barretos-SP</span>
         </div>
       </div>
     </div>
 
     <a href="#rsvp" class="btn-primary" data-tab-target="rsvp">Confirmar presença</a>
   </div>
-  <img src="assets/dino-mascot.svg" alt="Dinossauro bebê fofo" class="hero-dino">
+  <<div class="hero-dinos">
+  <img src="assets/dino-sauropod.svg" alt="Dinossauro de pescoço longo bebê fofo" class="hero-dino hero-dino--sauropod">
+  <img src="assets/dino-trex.svg" alt="Dinossauro T-rex bebê fofo" class="hero-dino hero-dino--trex">
+</div>
 </section>
 
 <!-- ============ NAVEGAÇÃO EM ABAS ============ -->
@@ -68,17 +71,15 @@
     <div class="panel-inner rsvp-layout">
       <div class="rsvp-intro">
         <h2>Confirme sua presença</h2>
-        <p>Contamos com você nessa aventura pré-histórica! Preencha o formulário abaixo até <strong>00/00/2026</strong> para garantirmos direitinho a comida e as lembrancinhas de cada convidado.</p>
-        <img src="assets/dino-mascot.svg" alt="" class="rsvp-dino">
+        <p>Contamos com você nessa aventura! Confimar presença até <strong>20/09/2026</strong> para garantirmos direitinho a comida e as lembrancinhas de cada convidado.</p>
+        <img src="assets/dino-triceratops.svg" alt="" class="rsvp-dino">
       </div>
 
-      <form class="rsvp-form" id="rsvpForm" action="https://formspree.io/f/xppzpzgp" method="POST">
+      <form class="rsvp-form" id="rsvpForm" action="https://formspree.io/f/SEU_CODIGO_AQUI" method="POST">
         <label>
-          Nome completo
+          Nome Completo
           <input type="text" name="nome" placeholder="Seu nome" required>
-        </label>
-
-        
+        </label>        
 
         <div class="form-row">
           <label>
@@ -89,9 +90,8 @@
             Crianças
             <input type="number" name="criancas" min="0" value="0">
           </label>
-        </div>     
+        </div>
 
-    
         <button type="submit" class="btn-primary btn-block">Enviar confirmação</button>
         <p class="form-note" id="formNote"></p>
       </form>
@@ -105,12 +105,12 @@
       <p class="panel-sub">Alguns registros da nossa expedição até aqui — troque pelas fotos do João Gui!</p>
 
       <div class="gallery-grid">
-        <figure><img src="https://placehold.co/500x500/B7DEC4/2F4A38?text=Foto+1" alt="Foto do Joao Gui 1"></figure>
-        <figure><img src="https://placehold.co/500x700/F5E9D6/2F4A38?text=Foto+2" alt="Foto do Joao Gui 2"></figure>
-        <figure><img src="https://placehold.co/500x500/F1876B/FFFFFF?text=Foto+3" alt="Foto do Joao Gui 3"></figure>
-        <figure><img src="https://placehold.co/500x700/8FAE7D/FFFFFF?text=Foto+4" alt="Foto do Joao Gui 4"></figure>
-        <figure><img src="https://placehold.co/500x500/F6C94C/2F4A38?text=Foto+5" alt="Foto do Joao Gui 5"></figure>
-        <figure><img src="https://placehold.co/500x700/B7DEC4/2F4A38?text=Foto+6" alt="Foto do Joao Gui 6"></figure>
+        <figure><img src="https://placehold.co/500x500/B7DEC4/2F4A38?text=Foto+1" alt="Foto do JG 1"></figure>
+        <figure><img src="https://placehold.co/500x700/F5E9D6/2F4A38?text=Foto+2" alt="Foto do JG 2"></figure>
+        <figure><img src="https://placehold.co/500x500/F1876B/FFFFFF?text=Foto+3" alt="Foto do JG 3"></figure>
+        <figure><img src="https://placehold.co/500x700/8FAE7D/FFFFFF?text=Foto+4" alt="Foto do JG 4"></figure>
+        <figure><img src="https://placehold.co/500x500/F6C94C/2F4A38?text=Foto+5" alt="Foto do JG 5"></figure>
+        <figure><img src="https://placehold.co/500x700/B7DEC4/2F4A38?text=Foto+6" alt="Foto do JG 6"></figure>
       </div>
     </div>
   </section>
@@ -119,39 +119,25 @@
   <section id="presentes" class="tab-panel">
     <div class="panel-inner">
       <h2>Dicas de presente</h2>
-      <p class="panel-sub">A presença de vocês já é o maior presente! Mas se quiserem mimar o Théo, aqui vão algumas ideias:</p>
+      <p class="panel-sub">A presença de vocês já é o maior presente! Mas se quiserem mimar o João Gui, aqui vão algumas ideias:</p>
 
       <div class="gift-grid">
         <div class="gift-card">
           <span class="gift-emoji">👕</span>
           <h3>Roupinhas</h3>
-          <p>Tamanho 2 anos, de preferência confortáveis para engatinhar e explorar o mundo.</p>
+          <p>Tamanho 2</p>
         </div>
         <div class="gift-card">
-          <span class="gift-emoji">📚</span>
-          <h3>Livros infantis</h3>
-          <p>Livrinhos de pano, banho ou capa dura com bichinhos e dinossauros.</p>
+          <span class="gift-emoji">&#x1F45F;</span>
+          <h3>Calçados</h3>
+          <p>Tamanho 22</p>
         </div>
         <div class="gift-card">
           <span class="gift-emoji">🧸</span>
-          <h3>Brinquedos educativos</h3>
+          <h3>Brinquedos</h3>
           <p>Blocos de montar, encaixes e brinquedos que estimulem a coordenação.</p>
-        </div>
-        <div class="gift-card">
-          <span class="gift-emoji">🍼</span>
-          <h3>Itens de bebê</h3>
-          <p>Fraldas (tamanho G), lencinhos umedecidos e produtos de higiene sempre são bem-vindos.</p>
-        </div>
-        <div class="gift-card">
-          <span class="gift-emoji">💌</span>
-          <h3>Contribuição especial</h3>
-          <p>Se preferir, pode contribuir via PIX para o caderninho de poupança do Théo.<br><strong>Chave PIX:</strong> exemplo@email.com</p>
-        </div>
-        <div class="gift-card">
-          <span class="gift-emoji">🚫</span>
-          <h3>Sem obrigação!</h3>
-          <p>O importante é celebrar juntos. Nenhum presente é esperado ou obrigatório.</p>
-        </div>
+        </div>      
+             
       </div>
     </div>
   </section>
@@ -160,25 +146,24 @@
   <section id="local" class="tab-panel">
     <div class="panel-inner">
       <h2>Como chegar</h2>
-      <p class="panel-sub"><strong>Nome do espaço</strong> · Rua Exemplo, 123 — Bairro, Cidade/UF</p>
+      <p class="panel-sub"><strong>Chácara Seleancla</strong> · Rua dos Economiários, 855 Barretos/SP</p>
 
       <div class="map-wrap">
         <iframe
           title="Mapa do local do evento"
-          src="https://www.google.com/maps?q=Avenida+Paulista,+S%C3%A3o+Paulo&output=embed"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.879521548559!2d-48.576485224756986!3d-20.530030180997464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bb84c0ccf6a0cd%3A0xb2a5598e1a277e04!2sR.%20dos%20Economi%C3%A1rios%2C%20855%20-%20Monte%20Alegre%2C%20Barretos%20-%20SP%2C%2014787-150!5e1!3m2!1spt-BR!2sbr!4v1788220036083!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
 
-      <a class="btn-primary" href="https://www.google.com/maps/search/?api=1&query=Avenida+Paulista+S%C3%A3o+Paulo" target="_blank" rel="noopener">Abrir no Google Maps</a>
+      <a class="btn-primary" href="https://maps.app.goo.gl/ETCJkUKcLH8qzvP9A" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" target="_blank" rel="noopener">Abrir no Google Maps</a>
 
       <div class="tips-box">
-        <h3>Dicas para chegar</h3>
+        <h3>Informações Úteis</h3>
         <ul>
           <li>🚗 Estacionamento disponível no local.</li>
-          <li>🚇 Estação de metrô mais próxima: nome da estação.</li>
-          <li>🅿️ Vagas para convidados com prioridade próximas à entrada.</li>
+          
         </ul>
       </div>
     </div>
