@@ -2,7 +2,7 @@
    TOKENS
 =================================================== */
 :root {
-  --cream: #F4FBFF;
+  --cream: #DCEFFB;
   --cream-2: #E3F4FA;
   --forest: #223247;
   --forest-light: #56718A;
@@ -140,7 +140,7 @@ select:focus-visible, textarea:focus-visible {
   line-height: 1.05;
   margin-bottom: 14px;
 }
-.hero h1 span { color: var(--coral); }
+.hero h1 span { color: var(--sage); }
 
 .hero-sub {
   font-size: 1.05rem;
