@@ -183,7 +183,7 @@ select:focus-visible, textarea:focus-visible {
 }
 
 .hero-dino {
-  width: min(300px, 46vw);
+  width: min(400px, 46vw);
   filter: drop-shadow(0 12px 18px rgba(34,50,71,.18));
 }
 
@@ -297,7 +297,7 @@ select:focus-visible, textarea:focus-visible {
 }
 
 .rsvp-intro p { color: var(--forest-light); }
-.rsvp-dino { width: 160px; margin-top: 20px; }
+.rsvp-dino { width: 260px; margin-top: 20px; }
 
 .rsvp-form {
   display: flex;
@@ -333,6 +333,21 @@ select:focus-visible, textarea:focus-visible {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 14px;
+}
+
+.nomes-extras {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.nomes-extras:empty { display: none; }
+
+.nomes-extras-title {
+  margin: 4px 0 -4px;
+  font-weight: 800;
+  font-size: .85rem;
+  color: var(--forest);
+
 }
 
 .form-note {

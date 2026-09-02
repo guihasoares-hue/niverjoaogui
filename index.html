@@ -51,8 +51,8 @@
     <a href="#rsvp" class="btn-primary" data-tab-target="rsvp">Confirmar presença</a>
   </div>
   <<div class="hero-dinos">
-  <img src="assets/dino-sauropod.svg" alt="Dinossauro de pescoço longo bebê fofo" class="hero-dino hero-dino--sauropod">
-  <img src="assets/dino-trex.svg" alt="Dinossauro T-rex bebê fofo" class="hero-dino hero-dino--trex">
+  <img src="assets/dino_verde_sem_fundo.svg" alt="Dinossauro de pescoço longo bebê fofo" class="hero-dino hero-dino--sauropod">
+  <img src="assets/dino_azul_transparente.svg" alt="Dinossauro T-rex bebê fofo" class="hero-dino hero-dino--trex">
 </div>
 </section>
 
@@ -70,9 +70,8 @@
   <section id="rsvp" class="tab-panel is-active">
     <div class="panel-inner rsvp-layout">
       <div class="rsvp-intro">
-        <h2>Confirme sua presença</h2>
-        <p>Contamos com você nessa aventura! Confimar presença até <strong>25/09/2026</strong> para garantirmos direitinho a comida e as lembrancinhas de cada convidado.</p>
-        <img src="assets/dino-triceratops.svg" alt="" class="rsvp-dino">
+        <h2>Confirme sua presença até 25/09/2026.</h2>        
+        <img src="assets/dino_triceratops_laranja.svg" alt="" class="rsvp-dino">
       </div>
 
       <form class="rsvp-form" id="rsvpForm" action="https://formspree.io/f/SEU_CODIGO_AQUI" method="POST">
@@ -84,13 +83,18 @@
         <div class="form-row">
           <label>
             Adultos
-            <input type="number" name="adultos" min="0" value="1">
+            <input type="number" name="adultos" id="inputAdultos" min="0" value="1">
           </label>
           <label>
             Crianças
-            <input type="number" name="criancas" min="0" value="0">
+            <input type="number" name="criancas" id="inputCriancas" min="0" value="0">
           </label>
         </div>
+        <div id="nomesExtrasContainer" class="nomes-extras"></div>
+
+        <label>   
+
+        
 
         <button type="submit" class="btn-primary btn-block">Enviar confirmação</button>
         <p class="form-note" id="formNote"></p>
@@ -102,7 +106,7 @@
   <section id="galeria" class="tab-panel">
     <div class="panel-inner">
       <h2>Galeria de fotos</h2>
-      <p class="panel-sub">Alguns registros da nossa expedição até aqui — troque pelas fotos do João Gui!</p>
+      <p class="panel-sub">Alguns registros da nossa expedição até aqui.</p>
 
       <div class="gallery-grid">
         <figure><img src="https://placehold.co/500x500/B7DEC4/2F4A38?text=Foto+1" alt="Foto do JG 1"></figure>
