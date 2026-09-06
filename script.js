@@ -103,46 +103,22 @@ if (inputAdultos && inputCriancas) {
 // ============================================
 // ENVIO DO FORMULÁRIO DE CONFIRMAÇÃO (RSVP)
 // ============================================
-function doPost(e) {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-  var dados = e.parameter;
-
-  // monta a string com os nomes extras de adultos e crianças
-  var outrosNomes = [];
-  for (var chave in dados) {
-    if (chave.indexOf('adulto_nome_') === 0 && dados[chave]) {
-      outrosNomes.push('Adulto: ' + dados[chave]);
-    }
-    if (chave.indexOf('crianca_nome_') === 0 && dados[chave]) {
-      outrosNomes.push('Criança: ' + dados[chave]);
-    }
-  }
-
-  sheet.appendRow([
-    new Date(),
-    dados.nome || '',
-    dados.presenca || '',
-    dados.adultos || '',
-    dados.criancas || '',
-    outrosNomes.join('; ')
-  ]);
-
-  return ContentService.createTextOutput(
-    JSON.stringify({ status: 'ok' })
-  ).setMimeType(ContentService.MimeType.JSON);
-}
-
 const rsvpForm = document.getElementById('rsvpForm');
 const formNote = document.getElementById('formNote');
 
-const usaGoogleSheets = rsvpForm.action.includes('script.google.com');
+if (rsvpForm) {
+  rsvpForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    formNote.textContent = 'Enviando...';
 
-  try {
-    await fetch(rsvpForm.action, {
-      method: 'POST',
-      body: new FormData(rsvpForm),
-      mode: usaGoogleSheets ? 'no-cors' : 'cors',
-      headers: usaGoogleSheets ? {} : { 'Accept': 'application/json' }
+    const usaGoogleSheets = rsvpForm.action.includes('script.google.com');
+
+    try {
+      await fetch(rsvpForm.action, {
+        method: 'POST',
+        body: new FormData(rsvpForm),
+        mode: usaGoogleSheets ? 'no-cors' : 'cors',
+        headers: usaGoogleSheets ? {} : { 'Accept': 'application/json' }
       });
 
       formNote.textContent = 'Presença confirmada! Muito obrigado 🦕💚';
